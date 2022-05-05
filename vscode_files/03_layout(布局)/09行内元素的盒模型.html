@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内元素的盒模型</title>
+    <style>
+        .span_padding{
+            /* display:none; */
+            display: block;
+            padding: 50px;
+            background-color: #bfa;
+        }
+        /* .span_margin{
+            display: block;
+            margin: 100px;
+            background-color: #bfa;
+        } */
+        .box{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">我是div1</div>
+    <span class="span_padding">我是span</span>   
+    <div class="box">我是div2</div>
+</body>
+</html>

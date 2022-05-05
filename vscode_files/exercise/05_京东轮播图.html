@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>京东轮播图样式练习</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .img_size{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+            border: 1px black solid;
+        }
+        .img_list li{
+            position: absolute;
+        }
+        .pointer a{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        .pointer{
+            position: absolute;
+            left: 60px;
+            bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img_size">
+        <ul class="img_list">
+            <li><a href="javascript:;"><img src="./img/05/1.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/2.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/3.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/4.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/5.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/6.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/7.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./img/05/8.jpg" alt=""></a></li>
+
+            <div class="pointer">
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                </div>
+        </ul>
+
+    </div>
+</body>
+</html>

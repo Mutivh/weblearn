@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷的问题</title>
+    <style>
+        .outer{
+            border: 5px red solid;
+            overflow: auto;
+        }
+        .outer2{
+            width: 200px;
+            height: 200px;
+            background-color:royalblue;
+
+        }
+        .inner{
+            width: 100px;
+            height: 50px;
+            background-color:silver;
+            float: left;
+        }
+        .inner2{
+            width: 100px;
+            height: 100px;
+            background-color:lightseagreen;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner2"></div>
+    </div>
+    <div class="outer2"></div>
+</body>
+</html>

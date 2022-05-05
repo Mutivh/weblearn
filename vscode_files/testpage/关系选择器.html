@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>关系选择器</title>
+    <style>
+        /* 子元素选择器 */
+        /* 为div1的子元素span设置字体颜色 */
+        /* div > span{
+            color: rgb(55, 0, 255);
+        } */
+        /* 当有多个div时，为div1的子元素span设置字体颜色 */
+        /* 写法1 */
+        /* .blue.size > span{
+            color: rgb(17, 0, 255);
+        } */
+        /* 写法2 */
+        /* div.blue > span{
+            color: rgb(38, 0, 255);
+        } */
+        /* 后代元素选择器 */
+        /* 选择div1的后代span */
+        /* div span.aqua{
+            color: aqua;
+        } */
+        /* 当有多个后代，选择特定后代时 */
+        /* div span.aqua.size{
+            color: aqua;
+            font-size: 30px;
+        } */
+        /* 相邻选择器 M + N */
+        /* 选择下边的一个兄弟：使用相邻选择器选p时，有span1不满足，没有span1满足 */
+        /* p.brother + p{
+            color: red;
+        } */
+        /* 兄弟选择器  M ~N */
+        /* 选择M元素后面所有同级N元素 */
+        /* 
+        相邻选择器和兄弟选择器总结：相邻选择器选下一个元素，N必须相邻
+        兄弟选择器选下一个元素，N不必相邻
+        */
+        p.brother ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是div1
+        <p class="brother">
+            我是div中的p1
+        </p>
+        <span>我是div1中的span1</span>
+        <span>我是div1中的span1</span>
+        <p>我是div中的p2</p>
+        <p>我是div中的p3</p>
+        <p>我是div中的p4</p>
+        
+    </div>
+    <br>
+    <span>
+        我是div外的span
+    </span>
+    <!-- <div>我是div2
+        <span>我是div2中的span2</span>
+    </div> -->
+</body>
+</html>

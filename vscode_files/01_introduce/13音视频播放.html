@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>音视频播放</title>
+</head>
+<body>
+    <audio src="./source/audio.mp3" controls loop></audio>
+    <br>
+    <audio controls>
+        <!-- 对不起，您的播放器不支持此音乐控件，请升级您的浏览器后再试。 -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.ogg">
+        <!-- ie8处理方式 -->
+        <embed src="./source/audio.mp3" type="audio/mp3" width="200" height="400">
+    </audio>
+    <br>
+    <video src="./source/flower.mp4" controls></video>
+    <br>
+    <video controls>
+        <source src="./source/flower.webm">
+        <source src="./source/flower.mp4">
+        <embed src="./source/flower.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

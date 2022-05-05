@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TestPage</title>
+    <style>
+        /* 测试交集选择器 */
+        /* div全选
+        div{
+            color: red;
+        } */
+        /* 只选择div1 */
+        /* .div1{
+            color: blue;
+        } */
+        /* 选择div1里的元素 */
+        .div1{
+            color: green;
+        }
+        div.div1{
+            font-size: 20px;
+        }
+        .div1.a{
+            background-color:blue;
+        }
+        /* 测试并集选择器 */
+    
+        /* .blue{
+            color: blue;
+        }
+        .size{
+            font-size: 30px;
+        }
+        .blue,.size{
+            font-family: 'Times New Roman', Times, serif;
+        } */
+    </style>
+</head>
+<body>
+    <div class="div1">我是div1</div>
+    <p class="div1">我是p</p>
+    <div class="div1 a">我是div2</div>
+</body>
+</html>

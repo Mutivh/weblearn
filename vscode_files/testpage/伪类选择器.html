@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /* ul > li:first-child{
+            color: blue;
+        }
+        ul > li:last-child{
+            color: red;
+        } */
+        /* ul > li:nth-child(2n){
+            color: blue;
+        } */
+        /* ul > li:first-of-type{
+            color: blue;
+        } */
+        /* ul > li:last-of-type{
+            color: blue;
+        } */
+        ul > li:nth-of-type(2n+1){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <p>我是来捣乱的</p>
+        <li>这是测试伪类的第一行</li>
+        <li>这是测试伪类的第二行</li>
+        <li>这是测试伪类的第三行</li>
+        <li>这是测试伪类的第四行</li>
+        <li>这是测试伪类的第五行</li>
+    </ul>
+</body>
+</html>

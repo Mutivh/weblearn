@@ -1,0 +1,19 @@
+p{
+    color: tomato;
+    font-size: 50px;
+}
+p.p1
+{
+  color: rgb(127, 28, 219);
+  font-size: 20px;
+}
+p.p2
+{
+    color: aqua;
+    font-family: monospace;
+}
+p.p3
+{
+    color: blueviolet;
+    font-size: x-large;
+}

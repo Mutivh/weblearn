@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+
+        /* 根据同一元素标签 */
+        /* 总是让第1行变色 */
+         /* ul > li:first-child{
+            color: blue; 
+        } */
+
+        /* 总是让最后1行变色 */
+        /* ul > li:last-child{
+            color: blue;
+        } */
+
+        /* 指定行变色 */
+        /* ul > li:nth-child(odd){
+            color: blue;
+        } */
+
+        /* 排除选择器选择的行 */ 
+        /* ul > li:not(:last-child){
+            color: blue;
+        } */
+
+        /* 根据不同类型 */
+        /* 总是让第一行变色 */
+        /* ul > li:first-of-type{
+            color: blue;
+        } */
+        /* 总是让最后一行变色 */
+        ul > li:last-of-type{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <span>这是一行普通的文字</span>
+        <li>这是第1行列表</li>
+        <li>这是第2行列表</li>
+        <li>这是第3行列表</li>
+        <li>这是第4行列表</li>
+        <li>这是第5行列表</li>
+    </ul>
+</body>
+</html>

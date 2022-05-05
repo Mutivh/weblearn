@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* p[title="1"]{
+            color: rgb(16, 12, 250);
+        } */
+        /* p[title^="abc"]{
+            color: blue;
+        } */
+        /* p[title$="cde"]{
+            color: blue;
+        } */
+        p[title*="c"]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p title="1">前端测试工具1</p>
+    <p title="1">前端测试工具2</p>
+    <p title="2cde">前端测试工具3</p>
+    <p title="abc">前端测试工具4</p>
+    <p title="abcde">前端测试工具5</p>
+</body>
+</html>

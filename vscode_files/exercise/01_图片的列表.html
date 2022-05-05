@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./css/reset.css">
+<head>
+    <meta charset="UTF-8">
+    <title>图片的列表</title>
+    <style>
+        .body_bgcolor{
+            background-color: antiquewhite;
+        }
+        .ul_size{
+            width: 190px;
+            height: 490px;
+            margin: 1px auto;
+            overflow: hidden;
+            background-color: azure;
+        }
+        .ul_size img{
+            width: 100%;
+        }
+        .ul_size>li:not(:last-child){
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="body_bgcolor">
+
+    <!-- ul_size设置的是ul框的大小,图片li列表全部显示在ul框中 -->
+    <ul class="ul_size" >
+        <li>
+            <a href="javascript:;">
+                <img src="./img/01/1.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="./img/01/2.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="./img/01/3.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

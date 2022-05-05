@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器</title>
+    <style>
+        .red{
+            color: red;
+        }
+        div.red{
+            font-size: 100px;
+        }
+        .blue{
+            color: blue;
+        }
+        .size{
+            font-size: 20px;
+        }
+        div.blue.size{
+            background-color: crimson;
+        }
+        .size1{
+            font-size: 50px;
+        }
+        .red.size1{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>我是div元素</div>
+    <div class="red">我是红色100pxdiv元素</div>
+    <div class="blue size">我是蓝色20px蓝色背景div元素</div>
+    <p>我是p元素</p>
+    <p class="red">我是红色p元素</p>
+    <p class="red size1">我是红色50px绿色背景p元素</p>
+
+    <h1>我是h元素</h1>
+    <span>我是span元素</span>
+    <h2>我是h2元素</h2>
+    <h2>我是h2元素</h2>
+    <h3>我是h3元素</h3>
+    <h3>我是h3元素</h3>
+</body>
+</html>
