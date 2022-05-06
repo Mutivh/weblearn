@@ -18,7 +18,7 @@
         /* 外部容器设置样式 */
         .top-bar-wrapper{
             width: 100%;
-            /* height: 30px; */
+            height: 30px;
             line-height: 30px;
             background-color: #E3E4E5;
             border-top: 1px #DDDDDD solid;
@@ -39,9 +39,17 @@
         .top-bar a:hover{
             color: #E40019;
         }
-        /* 设置定位浮动 */
+        /* 设置定位浮动以及边框样式 */
         .location{
             float: left;
+            position: relative;
+        }
+        .location:hover{
+            background-color: #fff;
+            border-color: #999;
+        }
+        .location:hover .city-list{
+            display: block;
         }
         .location i.fas,
         .shortcut .always-bright
@@ -50,6 +58,30 @@
         }
         .location i.fas{
             margin-right: 4px;
+        }
+        /* 设置city-list样式 */
+        .city-list{
+            width: 400px;
+            height: 577px;
+            border: 1px solid  rgb(204, 204, 204);
+            position: absolute;
+            display: none;
+            top: 30px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        }
+        .current-city{
+            padding: 0 10px;
+            border: 1px solid transparent;
+            border-bottom: none;
+            z-index: 9999;
+            position: relative;
+        }
+        /* 设置current-city的移入的效果 */
+        .location:hover .current-city{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            /* padding-bottom: 1px; */
         }
         /* 设置导航shortcut浮动 */
         .shortcut{
@@ -81,6 +113,9 @@
                 <a href="javascript:;">
                     <i class="fas fa-map-marker-alt"></i>广东
                 </a>
+            </div>
+            <!-- 创建城市下拉菜单 -->
+            <div class="city-list">
             </div>
         </div>
     <!-- 创建shortcut -->
