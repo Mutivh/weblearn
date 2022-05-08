@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电影卡片</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        .outer {
+            width: 240px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .img_waraper img{
+            vertical-align: top;
+        }
+        .content{
+            padding: 15px 20px 0;
+        }
+        .title{
+            color:#717171;
+            font-size: 19px;
+            padding-bottom: 15px;
+        }
+        .content .fas,
+        .category,
+        .descript
+        {
+            color: #ACAAAA;
+            font-size: 14px;
+        }
+        .category{
+            padding-left: 4px;
+        }
+        .descript{
+            display: block;
+            padding:15px 0;
+            line-height: 20px;
+        }
+        .rank{
+            border-top: 1px #E9E9E9 solid;
+            padding:0 20px;
+            /* width: 180px; */
+            height: 65px;
+            line-height: 65px;
+            color: #DDDDDD;
+        }
+        .rank .star{
+            float: left;
+        }
+        .rank .weibo{
+            float: right;
+        }
+        .rank .star .light{
+            color: #B9CB41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="img_waraper">
+            <img src="./img/10/1.jpg" alt="">
+        </div>
+        <div class="content">
+            <H2 class="title">迪士尼在逃公主</H2>
+            <div>
+                <i class="fas fa-map-marker-alt" ></i>
+                <span class="category">动画</span>
+            </div>
+            <span class="descript">这个有着动漫建模脸的女孩被网友誉为“迪士尼在逃公主”，她游走于二次元和现实世界。</span>
+        </div>
+        <div class="rank">
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <div class="weibo">
+                <i class="fab fa-weibo"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
