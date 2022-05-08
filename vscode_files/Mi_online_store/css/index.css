@@ -1,0 +1,46 @@
+.topbar-wrapper{
+    width: 100%;
+    line-height: 40px;
+    background-color: #333333;
+}
+.topbar{
+    height: 40px;
+    font-size: 12px;
+}
+.topbar a{
+    text-decoration: none;
+    color: #b0b0b0;
+    display: block;
+}
+.topbar a:hover{
+    color: #fff;
+}
+.topbar .service  li{
+    float: left;
+}
+/* .topbar .user-info{
+    margin-right: 150px;
+} */
+.topbar .user-info li,
+.topbar .shopping-cart
+{
+    float: right;
+}
+.line{
+    color: #424242; 
+    font-size: 13px;
+    margin: 0 8px;
+}
+.shopping-cart{
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+    margin-left: 26px;
+}
+.shopping-cart:hover a{
+    color: #FF6700;
+    background-color: #fff;
+}
+.shopping-cart .fas{
+    margin-right: 2px;
+}
