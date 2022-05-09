@@ -21,9 +21,31 @@
 .download-location{
     position: relative;
 }
-.topbar a:hover .download{
+.app::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: none;
+    border-bottom-color: #f9f9f8;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.download-location:hover .app::after,
+.topbar .app:hover .download
+{
     display: block;
 }
+/* .topbar a:hover .download,
+.topbar a:hover.app::after
+{
+    display: block;
+} */
+
 .topbar .service .download{
     width: 124px;
     height: 148px;
@@ -36,17 +58,13 @@
     padding-bottom: 10px;
 }
 .topbar .qrcode{
-    /* display: block; */
     width: 90px;
     height: 90px;
     margin: 17px;
-    /* margin: 0 auto;
-    margin-top: 20px; */
 }
 .topbar .download-word{
     font-size: 15px;
     color: rgb(0, 0, 0);
-    /* padding-left: 15px; */
 }
 .topbar .user-info li,
 .topbar .shopping-cart
@@ -63,10 +81,30 @@
     text-align: center;
     background-color: #424242;
     margin-left: 26px;
+    position: relative;
+}
+.goods{
+    width: 400px;
+    height: 128px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    display: none;
+    text-align: center;
+}   
+.goods span{
+    display: block;
+    line-height:1.5;
+    padding-top: 58px;
+
 }
 .shopping-cart:hover a{
     color: #FF6700;
     background-color: #fff;
+}
+.shopping-cart:hover .goods{
+    display: block;
 }
 .shopping-cart .fas{
     margin-right: 2px;
