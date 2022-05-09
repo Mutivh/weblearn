@@ -13,14 +13,41 @@
     display: block;
 }
 .topbar a:hover{
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 .topbar .service  li{
     float: left;
 }
-/* .topbar .user-info{
-    margin-right: 150px;
-} */
+.download-location{
+    position: relative;
+}
+.topbar a:hover .download{
+    display: block;
+}
+.topbar .service .download{
+    width: 124px;
+    height: 148px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -40px;
+    display: none;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.topbar .qrcode{
+    /* display: block; */
+    width: 90px;
+    height: 90px;
+    margin: 17px;
+    /* margin: 0 auto;
+    margin-top: 20px; */
+}
+.topbar .download-word{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    /* padding-left: 15px; */
+}
 .topbar .user-info li,
 .topbar .shopping-cart
 {
