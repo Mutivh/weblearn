@@ -35,11 +35,14 @@
     margin: auto;
     display: none;
 }
-.download-location:hover .app::after,
-.topbar .app:hover .download
+.download-location:hover .app::after
 {
     display: block;
 }
+.topbar .app:hover .download{
+    height: 148px;
+}
+
 /* .topbar a:hover .download,
 .topbar a:hover.app::after
 {
@@ -48,14 +51,15 @@
 
 .topbar .service .download{
     width: 124px;
-    height: 148px;
+    height: 0px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     position: absolute;
     left: -40px;
-    display: none;
+    /* display: none; */
+    overflow: hidden;
     line-height: 1;
     text-align: center;
-    padding-bottom: 10px;
+    transition: height 1s;
 }
 .topbar .qrcode{
     width: 90px;
