@@ -42,13 +42,6 @@
 .topbar .app:hover .download{
     height: 148px;
 }
-
-/* .topbar a:hover .download,
-.topbar a:hover.app::after
-{
-    display: block;
-} */
-
 .topbar .service .download{
     width: 124px;
     height: 0px;
@@ -80,6 +73,14 @@
     font-size: 13px;
     margin: 0 8px;
 }
+/* .topbar .service li{
+    position: relative;
+    z-index: 100;
+}
+.topbar .user-info li{
+    position: relative;
+    z-index: 100;
+}  */
 .shopping-cart{
     width: 120px;
     text-align: center;
@@ -87,15 +88,23 @@
     margin-left: 26px;
     position: relative;
 }
-.goods{
-    width: 400px;
+.topbar .shopping-cart a{
+    position: relative;
+    z-index: 99;
+}
+.topbar .shopping-cart:hover .goods{
     height: 128px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.topbar .shopping-cart .goods{
+    width: 400px;
+    height: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     position: absolute;
     right: 0;
     display: none;
     text-align: center;
+    transition: height 1s;
 }   
 .goods span{
     display: block;
@@ -109,6 +118,7 @@
 }
 .shopping-cart:hover .goods{
     display: block;
+    transition: height 1s;
 }
 .shopping-cart .fas{
     margin-right: 2px;
