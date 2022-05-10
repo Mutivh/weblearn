@@ -123,3 +123,51 @@
 .shopping-cart .fas{
     margin-right: 2px;
 }
+/* 设置第二个导航栏 */
+/* 设置第二个导航栏外部容器 */
+.nav-warapper{
+    width: 100%;
+}
+/* 设置导航栏 */
+.nav{
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+/* 设置logo区域 */
+.nav .logo{
+    float: left;
+    position: relative;
+}
+/* 设置logo-link的小米图标 */
+.nav .mi-link{
+    width: 55px;
+    height: 55px;
+    margin-top: 22.5px;
+    background-color: #FF6900;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    border-radius: 20px;
+    position: absolute;
+    left:0;
+    transition: left 1s;
+}
+/* 设置logo-link的home图标 */
+.nav .home-link{
+    width: 55px;
+    height: 55px;
+    margin-top: 22.5px;
+    background-color: #FF6900;
+    background-image: url(../img/mi-home.png);
+    background-position: center;
+    border-radius: 20px;
+    position: absolute;
+    left: -55px;
+    transition: left 1s;
+}
+/* 设置鼠标移入时图标的动画 */
+.nav .mi-link:hover{
+    left: 55px;
+}
+.nav .mi-link:hover .nav .home-link{
+    left: 0px;
+}
