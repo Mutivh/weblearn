@@ -137,12 +137,34 @@
 .nav .logo{
     float: left;
     position: relative;
-}
-/* 设置logo-link的小米图标 */
-.nav .mi-link{
     width: 55px;
     height: 55px;
     margin-top: 22.5px;
+    /* background-color: rgb(248, 20, 20); */
+    overflow: hidden;
+    text-indent: -9999px;
+}
+/* 统一设置图标链接样式 */
+.nav a{
+    width: 55px;
+    height: 55px;
+    background-color: #FF6900;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    /* border-radius: 20px; */
+    position: absolute;
+    left:0;
+    transition: left 0.3s;
+}
+/* 设置home链接样式 */
+.nav .home-link{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+}
+/* 设置logo-link的小米图标 */
+/* .nav .mi-link{
+    width: 55px;
+    height: 55px;
     background-color: #FF6900;
     background-image: url(../img/mi-logo.png);
     background-position: center;
@@ -150,12 +172,11 @@
     position: absolute;
     left:0;
     transition: left 1s;
-}
+} */
 /* 设置logo-link的home图标 */
-.nav .home-link{
+/* .nav .home-link{
     width: 55px;
     height: 55px;
-    margin-top: 22.5px;
     background-color: #FF6900;
     background-image: url(../img/mi-home.png);
     background-position: center;
@@ -163,11 +184,11 @@
     position: absolute;
     left: -55px;
     transition: left 1s;
-}
+} */
 /* 设置鼠标移入时图标的动画 */
 .nav .mi-link:hover{
     left: 55px;
 }
-.nav .mi-link:hover .nav .home-link{
-    left: 0px;
+.nav .logo:hover .home-link{
+    left:0;
 }
