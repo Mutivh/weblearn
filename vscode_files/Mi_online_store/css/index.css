@@ -127,11 +127,14 @@
 /* 设置第二个导航栏外部容器 */
 .nav-warapper{
     height:100px;
+    background-color: rgb(208, 12, 12);
 }
 /* 设置导航栏 */
 .left-logo{
     height: 100px;
+    width: 55px;
     background-color: rgb(255, 255, 255);
+    float: left;
 }
 /* 设置logo区域 */
 .left-logo .logo{
@@ -194,5 +197,10 @@
 }
 /* 设置中间导航条 */
 .nav{
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+.nav li{
     float: left;
 }
