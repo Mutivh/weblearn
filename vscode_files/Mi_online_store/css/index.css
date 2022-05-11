@@ -126,15 +126,15 @@
 /* 设置第二个导航栏 */
 /* 设置第二个导航栏外部容器 */
 .nav-warapper{
-    width: 100%;
+    height:100px;
 }
 /* 设置导航栏 */
-.nav{
+.left-logo{
     height: 100px;
     background-color: rgb(255, 255, 255);
 }
 /* 设置logo区域 */
-.nav .logo{
+.left-logo .logo{
     float: left;
     position: relative;
     width: 55px;
@@ -145,7 +145,7 @@
     text-indent: -9999px;
 }
 /* 统一设置图标链接样式 */
-.nav a{
+.left-logo a{
     width: 55px;
     height: 55px;
     background-color: #FF6900;
@@ -157,12 +157,12 @@
     transition: left 0.3s;
 }
 /* 设置home链接样式 */
-.nav .home-link{
+.left-logo .home-link{
     background-image: url(../img/mi-home.png);
     left: -55px;
 }
 /* 设置logo-link的小米图标 */
-/* .nav .mi-link{
+/* .left-logo .mi-link{
     width: 55px;
     height: 55px;
     background-color: #FF6900;
@@ -174,7 +174,7 @@
     transition: left 1s;
 } */
 /* 设置logo-link的home图标 */
-/* .nav .home-link{
+/* left-logo .home-link{
     width: 55px;
     height: 55px;
     background-color: #FF6900;
@@ -186,9 +186,13 @@
     transition: left 1s;
 } */
 /* 设置鼠标移入时图标的动画 */
-.nav .mi-link:hover{
+.left-logo .mi-link:hover{
     left: 55px;
 }
-.nav .logo:hover .home-link{
+.left-logo .logo:hover .home-link{
     left:0;
+}
+/* 设置中间导航条 */
+.nav{
+    float: left;
 }
