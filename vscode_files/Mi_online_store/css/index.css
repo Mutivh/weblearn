@@ -127,7 +127,6 @@
 /* 设置第二个导航栏外部容器 */
 .nav-warapper{
     height:100px;
-    background-color: rgb(208, 12, 12);
 }
 /* 设置导航栏 */
 .left-logo{
@@ -201,6 +200,22 @@
     height: 100px;
     line-height: 100px;
 }
-.nav li{
+.nav .nav-item{
+    padding-left: 85px;
+}
+.nav .nav-item li{
     float: left;
+}
+.nav .nav-item li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding-right: 28px;
+    display: block;
+}
+.nav .nav-item li a:hover{
+    color: #FF6700;
+}
+.nav .nav-item .all-goods{
+    visibility: hidden;
 }
