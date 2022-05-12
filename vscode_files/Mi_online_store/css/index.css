@@ -54,6 +54,7 @@
     text-align: center;
     background-color: #fff;
     transition: height 1s;
+    z-index: 99;
 }
 .topbar .qrcode{
     width: 90px;
@@ -106,6 +107,7 @@
     /* display: none; */
     text-align: center;
     overflow: hidden;
+    z-index: 99;
 }   
 .goods span{
     display: block;
