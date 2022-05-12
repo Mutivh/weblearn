@@ -235,7 +235,7 @@
     overflow: hidden;
     transition: height 0.3s;
 }
-.nav .nav-item li:hover ~ .popup{
+.nav .nav-item li:not(:nth-child(9),:nth-child(10)):hover ~ .popup{
     height: 230px;
     border-top: 1px solid #E0E0E0;
     box-shadow: 0 5px 10px rgba(214, 214, 214, 0.5);
@@ -245,4 +245,50 @@
     height: 230px;
     border-top: 1px solid #E0E0E0;
     box-shadow: 0 5px 10px rgba(214, 214, 214, 0.5);
+}
+/* 设置搜索框 */
+/* 设置文本框 */
+.search{
+    /* width: 296px; */
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+}
+.search-inp{
+    box-sizing: border-box;
+    width: 228px;
+    height: 50px;
+    border: 1px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    outline: none;
+    float: left;
+    font-size: 16px;
+    color: #757575;
+    padding-left: 15px;
+    /* transition: border-color 0.3s; */
+}
+.search-btn{
+    float: left;
+    width: 52px;
+    height: 50px;
+    border: 1px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-left: none;
+    outline: none;
+    font-size: 16px;
+    color: #616161;
+    background-color:#fff;
+    /* transition: border-color 0.3s; */
+}
+.search-inp:focus,
+.search-inp:focus + .search-btn
+{
+    border-color: #FF6700;
+}
+.search-btn:hover{
+    color: #fff;
+    background-color: #FF6700;
+    border: none;
 }
