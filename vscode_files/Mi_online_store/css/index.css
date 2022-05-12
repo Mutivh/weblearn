@@ -52,6 +52,7 @@
     overflow: hidden;
     line-height: 1;
     text-align: center;
+    background-color: #fff;
     transition: height 1s;
 }
 .topbar .qrcode{
@@ -125,6 +126,10 @@
 }
 /* 设置第二个导航栏 */
 /* 设置第二个导航栏外部容器 */
+/* .nav-outerwarapper{
+
+} */
+/* 设置第二个导航栏内部容器 */
 .nav-warapper{
     height:100px;
 }
