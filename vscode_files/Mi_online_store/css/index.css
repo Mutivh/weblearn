@@ -126,9 +126,9 @@
 }
 /* 设置第二个导航栏 */
 /* 设置第二个导航栏外部容器 */
-/* .nav-outerwarapper{
-
-} */
+.nav-outerwarapper{
+    position: relative;
+}
 /* 设置第二个导航栏内部容器 */
 .nav-warapper{
     height:100px;
@@ -223,4 +223,24 @@
 }
 .nav .nav-item .all-goods{
     visibility: hidden;
+}
+.nav .nav-item .popup{
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top: 100px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+.nav .nav-item li:hover ~ .popup{
+    height: 230px;
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0 5px 10px rgba(214, 214, 214, 0.5);
+}
+
+.nav .nav-item .popup:hover{
+    height: 230px;
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0 5px 10px rgba(214, 214, 214, 0.5);
 }
