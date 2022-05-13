@@ -292,3 +292,8 @@
     background-color: #FF6700;
     border: none;
 }
+.nav .nav-item .all-goods .goods-item{
+    background-color: #FF6700;
+    height: 200px;
+    clear: both;
+}
