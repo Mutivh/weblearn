@@ -213,6 +213,10 @@
 .nav .nav-item li{
     float: left;
 }
+.nav .nav-item .all-goods{
+    /* visibility: hidden; */   
+    position: relative;
+}
 .nav .nav-item li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -221,11 +225,8 @@
     display: block;
 }
 .nav .nav-item li a:hover{
-    color: #FF6700;
+    color:#FF6700;
 }
-/* .nav .nav-item .all-goods{
-    visibility: hidden;
-} */
 .nav .nav-item .popup{
     height: 0px;
     width: 100%;
@@ -234,6 +235,8 @@
     top: 100px;
     overflow: hidden;
     transition: height 0.3s;
+    background-color: #fff;
+    z-index: 9;
 }
 .nav .nav-item li:not(:nth-child(1),:nth-child(10)):hover ~ .popup{
     height: 230px;
@@ -292,7 +295,65 @@
     background-color: #FF6700;
     border: none;
 }
-.nav .nav-item .all-goods .goods-item{
+/* 设置全部商品的下拉菜单 */
+.nav-item .all-goods .goods-item{
+    position: relative;
+    z-index: 1;
+}
+.nav-item .all-goods .goods-item li{
+    float: none;
+}
+.nav-item .all-goods .goods-item li:hover{
     background-color: #FF6700;
-    height: 200px;
+}
+.nav .nav-item .all-goods .goods-item{
+    position: absolute;
+    width: 234px;
+    height: 440px;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 42px;
+    padding-top: 20px;
+    left: -140px;
+}
+.nav-item .all-goods .goods-item li a{
+    display: block;
+    color: #fff;
+    height: 42px;
+    padding: 0 30px;
+    font-size: 14px;
+}
+.nav-item .all-goods .goods-item li .fas{
+    float: right;
+    color: #DFDFDF;
+    line-height: 42px;
+}
+.banner{
+    position: relative;
+    height: 460px;
+}
+.banner .img-list li{
+    position: absolute;
+}
+.banner .img-list li a img{
+    width: 100%;
+    vertical-align: top;
+}
+.banner .pointer{
+    position: absolute;
+    bottom: 35px;
+    right: 45px;
+}
+.banner .pointer a{
+    float: left;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50% 50%;
+}
+.banner .pointer a:hover,
+.banner .pointer a.active
+{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4); 
 }
