@@ -357,3 +357,29 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-color: rgba(0, 0, 0, 0.4); 
 }
+.banner  .slides .slides-pre,
+.banner  .slides .slides-nex{
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.banner  .slides .slides-pre{
+    left: 234px;
+    background-image: url(../img/icon-slides.png);
+    background-position: 83px 0;
+}
+.banner  .slides .slides-nex{
+    background-position: -125px 0;
+    right: 0;
+    background-image: url(../img/icon-slides.png);
+}
+.banner  .slides .slides-pre:hover{
+    background-position:0 0;
+}
+.banner  .slides .slides-nex:hover{
+    background-position: 125px 0;
+}
