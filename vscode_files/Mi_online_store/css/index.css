@@ -392,3 +392,48 @@
     right: 50%;
     margin-right: -653px;
 }
+.adv .shorticon{
+    width: 228px;
+    height: 170px;
+    background-color: #60574E;
+    text-align: center;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+    float: left;
+}
+.adv .shorticon li{
+    float: left;
+    width: 76px;
+    height: 84px;
+    font-size: 16px;
+}
+.adv .shorticon li a{
+    display: block;
+    color: #C2C0BE;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.adv .shorticon li a i{
+    display: block;
+    padding-bottom: 5px;
+}
+.adv .shorticon li a:hover{
+    color: #fff;
+}
+.ad-img,
+.adv .ad-img li,
+.adv .ad-img li img{
+    float: left;
+}
+.adv .ad-img li{
+    width: 316px;
+    height: 170px;
+    vertical-align: bottom;
+}
+.adv .ad-img li:not(:first-child){
+    margin-left: 15px;
+}
+.adv .ad-img li img{
+    width: 100%;
+}
