@@ -383,3 +383,12 @@
 .banner  .slides .slides-nex:hover{
     background-position: 125px 0;
 }
+.fixed-block{
+    width: 40px;
+    height: 180px;
+    background-color:#FF6700;
+    position: fixed;
+    bottom: 50px;
+    right: 50%;
+    margin-right: -653px;
+}
