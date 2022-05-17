@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局主轴测试</title>
+    <style>
+        .big-box{
+            width: 350px;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px black solid;
+            align-items:center;
+        }
+   
+        .box1{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+        }
+        .box2{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(22, 32, 173);
+        }
+        .box3{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(119, 238, 51);
+        }
+        .box4{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(241, 104, 25);
+        }
+        .box5{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(238, 64, 229);
+        }
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <div class="box1">1</div>
+        <div class="box2">2
+            <div>2</div>
+        </div>
+        <div class="box3">3
+            <div>3</div>
+            <div>3</div>
+        </div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+</body>
+</html>
