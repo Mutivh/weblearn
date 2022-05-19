@@ -4,35 +4,64 @@
     <meta charset="UTF-8">
     <title>flex布局</title>
     <style>
-        .outer{
+        /* 100/750=0.13333，这个数值代表0.1333vw=1px=1rem，rem（px）*这个数值=font size
+        将他设置为font size以后，有多少
+        */
+        /* .outer{
             display: flex;
-            flex-flow: row wrap;
-            justify-content:space-around;
-            align-items:center;
+            width: 350px;
+            height: 350px;
+            border: 10px gray solid;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content:flex-end;
         }
         .inner1{
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: rgb(135, 160, 236);
         }
         .inner2{
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-color: rgb(25, 55, 145);
         }
         .inner3{
-            width: 400px;
-            height: 400px;
+            width: 100px;
+            height: 100px;
             background-color: rgb(6, 24, 79);
+        } */
+        .outer{
+            display: flex;
+            width: 600px;
+            height: 300px;
+            background-color: gray;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
+        .outer span{
+            border: 1px red solid;
+            flex: 1;
+        }
+        .outer span:nth-child(2){
+            flex: 2;
+        }
+
     </style>
 </head>
 <body>
-    <div class="outer">
+    <!-- <div class="outer">
         <div class="inner1">1</div>
         <div class="inner2">2</div>
         <div class="inner3">3</div>
-        <!-- <div class="inner1">4</div>
+        <div class="inner1">4</div>
+        <div class="inner2">5</div>
+        <div class="inner3">6</div>
+        <div class="inner1">1</div>
+        <div class="inner2">2</div>
+        <div class="inner3">3</div>
+        <div class="inner1">4</div>
         <div class="inner2">5</div>
         <div class="inner3">6</div>
         <div class="inner1">7</div>
@@ -40,7 +69,12 @@
         <div class="inner3">9</div>
         <div class="inner1">10</div>
         <div class="inner2">11</div>
-        <div class="inner3">12</div> -->
+        <div class="inner3">12</div>
+    </div> -->
+    <div class="outer">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
     </div>
 </body>
 </html>
